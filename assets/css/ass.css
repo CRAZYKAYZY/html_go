@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(112, 84, 84);
+    height: 300px;
+    /* display: flex; */
+    justify-content: center;
+    background-image: url(/assets/images/photo_2021-08-04_13-35-21.jpg);
+    /* align-items: center; */
+}
+
+body {
+    border: 5px solid orange;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    margin: 0;
+    height: 400px;
+    width: 100%;
+    background-color: palevioletred;
+    min-height: calc(100vh - 300px - 50px);
+    overflow: auto;
+}
+
+section {
+    background-color: powderblue;
+    height: 1000px;
+    width: 60%;
+    overflow: auto;
+    margin-left: 20%;
+    margin: 20px;
+}
+
+article {
+    background-color: rebeccapurple;
+    height: 400px;
+    width: 70%;
+    overflow: auto;
+
+}
+
+.asideLeft {
+    float: left;
+    height: 400px;
+    width: 17%;
+    background-color: slategray;
+    position: sticky;
+    top: 10px;
+}
+
+aside {
+    float: right;
+    width: 17%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+    height: 400px;
+    margin: 20px;
+}
+
+figure {
+    background-color: salmon;
+    height: 300px;
+    width: 50%;
+    margin: 0;
+    margin: 20px;
+}
+
+footer {
+    background-color: rgb(31, 62, 94);
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 10px;
+}
+
+nav {
+    background-color: palegreen;
+    height: 100px;
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: rgb(211, 204, 204);
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: grey;
+}

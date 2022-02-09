@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="icon" type="image/png" href="/assets/images/download.png" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <script src="myScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="nav-logo">BLOG</div>
+            <div class="nav-toggle" id="toggle-btn"><i class="fa fa-bars fa-2x"></i></div>
+            <nav id="nav-list">
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <article class="article-container">
+                <h1>ABOUT ME</h1>
+                <div class="article-content">
+                    <div class="figure">
+                        <figure>
+                            <img src="/assets/images/photo_2022-01-22_14-46-12.jpg" alt="">
+                        </figure>
+                    </div>
+                    <div class="article-p">
+                        <h2>whoami</h2>
+                        <p>whoami? I've been trying to figure that out for the longest possible time. Connecting dots
+                            from as far as I can remember. It only makes sense now where I'm coming from. Gives me a
+                            clear picture of where I'm headed. Maybe I foresaw everything fall into place like autumn
+                            leaves. But I guess that just leaves me a <b>mess</b>. whoami?
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <section class="contact">
+                        <h2>Get in Touch</h2>
+                        <p>If you feel the need to contact me, feel free to leave me a message below.</p>
+                        <form action="#" class="contact-form">
+                            <div class="input-box">
+                                <input type="text" placeholder="Enter Name Here">
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Enter Email Here">
+                            </div>
+                            <textarea name="message" rows="5" placeholder="Type Message Here"></textarea>
+                            <div class="btn">
+                                <button type="reset">SEND</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </article>
+            <!-- <aside>
+                <h1>CONTACT</h1>
+            </aside> -->
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="footer-text">
+                &copy;hello
+            </div>
+            <img class="hello-world-img" src="/assets/images/world-g505500922_1280.png" alt="hello-world">
+        </div>
+    </footer>
+</body>
+<script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const navList = document.getElementById('nav-list');
+
+    toggleBtn.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+</script>
+
+</html>
