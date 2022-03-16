@@ -11,7 +11,7 @@ func init() {
 	tpl = template.Must(template.ParseGlob("templates/*.html"))
 }
 
-func handler(w http.ResponseWriter, r *http.Request) {
+func index(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "index.html", nil)
 }
 
@@ -25,6 +25,10 @@ func portfolio(w http.ResponseWriter, r *http.Request) {
 
 func flexbox(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "flexbox.html", nil)
+}
+
+func js(w http.ResponseWriter, r *http.Request) {
+	tpl.ExecuteTemplate(w, "js.html", nil)
 }
 
 func gohtml(w http.ResponseWriter, r *http.Request) {
@@ -50,10 +54,10 @@ func main() {
 	fs := http.FileServer(http.Dir("assets"))
 	http.Handle("/assets/", http.StripPrefix("/assets", fs))
 
-	http.HandleFunc("/", handler)
 	http.HandleFunc("/next", gohtml)
 	http.HandleFunc("/semantic", semantic)
 	http.HandleFunc("/portfolio", portfolio)
-	http.HandleFunc("/flexbox", flexbox)
+	http.HandleFunc("/", index)
+	http.HandleFunc("/js", js)
 	http.ListenAndServe(":8000", nil)
 }

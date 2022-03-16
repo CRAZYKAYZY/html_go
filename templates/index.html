@@ -2,73 +2,171 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" <link ref="icon" href="images/logo.png">
-    <title>NEW BEGINNINGS</title>
-    <style>
-        header {
-            background-color: aliceblue;
-            color: rebeccapurple;
-            text-align: center;
-        }
-
-        section {
-            background-color: rosybrown;
-            height: 300px;
-        }
-
-        footer {
-            background-color: saddlebrown;
-            color: seagreen;
-            text-align: center;
-        }
-
-        aside {
-            border-style: dashed;
-            width: 200px;
-            display: block(none);
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="icon" type="image/png" href="/assets/images/download.png" />
+    <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+    <script src="https://kit.fontawesome.com/d3cb6d3d92.js" crossorigin="anonymous"></script>
+    <script src="myScript.js"></script>
 </head>
 
 <body>
     <header>
-        <menu>
-            <nav>
-                <span>HOME</span>
-                <span>CONTACT</span>
-                <span>ABOUT</span>
+        <div class="container">
+            <div class="nav-logo">Portfolio</div>
+            <div class="nav-toggle" id="toggle-btn"><i class="fa fa-bars fa-2x"></i></div>
+            <nav id="nav-list">
+                <ul>
+                    <!-- <li><a href="#home">Home</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Skills</a></li>
+                    <li><a href="#hobbies">Contact</a></li>
+                </ul>
             </nav>
-        </menu>
+        </div>
     </header>
-    <section>
-        <dialog open>
-            <form action="/next" method="POST">
-                <label for="fn">FIRST NAME</label>
-                <input type="text" name="firstName" id="fn">
+    <main>
+        <div class="section-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hero Heading
+                </h1>
+                <h2 class="hero-subtitle">
+                    This is the subtitle for the hero section
+                </h2>
+                <button type="button" class="hero-button" onclick="location.href='tours.html'">
+                    About us
+                </button>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-wrap">
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2022-01-22_14-46-47.jpg" alt="fotro">
+                    <div class="p">hurr</div>
+                </div>
 
-                <label for="ln">LAST NAME</label>
-                <input type="text" name="lastName" id="ln">
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2022-01-22_14-46-12.jpg" alt="fotro">
+                    <p>hurr</p>
+                </div>
 
-                <input type="submit" id="btn">
-            </form>
-        </dialog>
-        <aside>
-            adverts here..
-        </aside>
-        <article>
-            articles go here
-        </article>
-    </section>
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2017-06-18_23-57-17.jpg" alt="fotro">
+                    <p>hurr</p>
+                </div>
+
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2022-01-22_14-46-38.jpg" alt="fotro">
+                    <p>hurr</p>
+                </div>
+
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2022-01-22_14-52-48.jpg" alt="fotro">
+                    <p>hurr</p>
+                </div>
+
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2017-08-26_21-15-06.jpg" alt="fotro">
+                    <p>hurr</p>
+                </div>
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2022-01-22_14-46-19.jpg" alt="fotro">
+                    <p>thats uurt</p>
+                </div>
+                <div class="image-holder">
+                    <img src="/assets/images/photo_2022-01-22_14-46-31.jpg" alt="fotro">
+                    <p>ahhhh</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-content">
+            <h1 class="content-title">
+                SKILLS
+            </h1>
+            <div class="section-skills">
+                <div class="content-skills">
+                    <!-- <img src="" alt=""> -->
+                    <div class="skill">
+                        <div class="icon"><i class="fa fa-duotone fa-code fa-6x"></i></div>
+                        <center>
+                            <h3>HTML</h3>
+                        </center>
+                    </div>
+                    <div class="skill">
+                        <div class="icon"><i class="fa fa-brands fa-css3 fa-6x"></i></div>
+                        <center>
+                            <h3>CSS</h3>
+                        </center>
+                    </div>
+                    <div class="skill">
+                        <div class="icon"><i class="fa-brands fa-js fa-6x"></i></div>
+                        <center>
+                            <h3>JavaScript</h3>
+                        </center>
+                    </div>
+                    <div class="skill">
+                        <div class="icon"><i class=" fa fa-brands fa-golang fa-6x"
+                                style="color: rgb(54, 142, 201);"></i></div>
+                        <center>
+                            <h3>Go</h3>
+                        </center>
+                    </div>
+                    <div class="skill" style="background-color: orange; border-radius: 10px;">
+                        <div class="icon"><i class="fa-brands fa-linux fa-6x"></i></div>
+                        <center>
+                            <h3>Linux</h3>
+                        </center>
+                    </div>
+                    <div class="skill">
+                        <div class="icon"><i class="fa-brands fa-php fa-6x" style="color: #474a8a;"></i></div>
+                        <center>
+                            <h3>PHP</h3>
+                        </center>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <section class="contact">
+                        <h2>Get in Touch</h2>
+                        <p>If you feel the need to contact me, feel free to leave me a message below.</p>
+                        <form action="#" class="contact-form">
+                            <div class="input-box">
+                                <input type="text" placeholder="Enter Name Here">
+                            </div>
+                            <div class="input-box">
+                                <input type="email" placeholder="Enter Email Here">
+                            </div>
+                            <textarea name="message" rows="5" placeholder="Type Message Here"></textarea>
+                            <div class="btn">
+                                <button type="reset">SEND</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer>
-        <div>
-            &copy;copyright 2021
-        </div>
-        <div>
-            html|css|javascript
-        </div>
+        <!-- <div class="foot">
+            <div class="footer-text">
+                &copy;hello
+            </div>
+            <img class="hello-world-img" src="/assets/images/world-g505500922_1280.png" alt="hello-world">
+        </div> -->
     </footer>
 </body>
+<script>
+    const toggleBtn = document.getElementById('toggle-btn');
+    const navList = document.getElementById('nav-list');
+
+    toggleBtn.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+</script>
 
 </html>

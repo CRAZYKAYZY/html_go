@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function f1() {
+            // defining object
+            var product = {
+                Id: 1,
+                Name: "iPhone 13",
+                Price: 13000.01,
+                InStock: false,
+                Quantity: 4,
+                shippedTo: ['Zambia', 'SA'],
+                Total: function () {
+                    return product.Quantity * product.Price;
+                }
+            }
+            if (product.InStock == true)
+                stock = "Available";
+            else
+                stock = "out of stock";
+
+            document.write("Id : " + product.Id + "<br>" + "Name=" + product.Name + "<br>" + "Total price=" + product.Quantity * product.Total())
+        }
+        f1();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
